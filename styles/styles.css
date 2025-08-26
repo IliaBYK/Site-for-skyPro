@@ -139,13 +139,16 @@
   position: absolute;
   left: -25px;
   top: -9px;
-  background-image: url("../../img/radioCheck.svg");
+  background-image: url("../img/radioCheck.svg");
   background-repeat: no-repeat;
   width: 10px;
   height: 10px;
 }
 .filter__input_radio:checked::before {
   border: 1px solid #000;
+}
+.filter__input {
+  cursor: pointer;
 }
 .filter__input_color {
   -webkit-appearance: none;
@@ -163,7 +166,7 @@
   position: absolute;
   left: 2px;
   top: 3px;
-  background-image: url("../../img/radioCheck.svg");
+  background-image: url("../img/radioCheck.svg");
   background-repeat: no-repeat;
   width: 10px;
   height: 10px;
@@ -179,13 +182,13 @@
   border: 1px solid #FF0000;
 }
 .filter__input_color_black:checked::after {
-  background-image: url("../../img/radioCheckWhite.svg");
+  background-image: url("../img/radioCheckWhite.svg");
 }
 .filter__input_color_brown {
   background: #737373;
 }
 .filter__input_color_brown:checked::after {
-  background-image: url("../../img/radioCheckWhite.svg");
+  background-image: url("../img/radioCheckWhite.svg");
 }
 .filter__input_color_red {
   background: #FF0000;
@@ -209,19 +212,19 @@
   background: #000AF8;
 }
 .filter__input_color_blue_dark:checked::after {
-  background-image: url("../../img/radioCheckWhite.svg");
+  background-image: url("../img/radioCheckWhite.svg");
 }
 .filter__input_color_lile {
   background: #6710D6;
 }
 .filter__input_color_lile:checked::after {
-  background-image: url("../../img/radioCheckWhite.svg");
+  background-image: url("../img/radioCheckWhite.svg");
 }
 .filter__input_color_violet {
   background: #9D0DB5;
 }
 .filter__input_color_violet:checked::after {
-  background-image: url("../../img/radioCheckWhite.svg");
+  background-image: url("../img/radioCheckWhite.svg");
 }
 .filter__input_color_lilac {
   background: #D89AFF;
@@ -246,7 +249,7 @@
   position: absolute;
   left: 2px;
   top: 3px;
-  background-image: url("../../img/radioCheck.svg");
+  background-image: url("../img/radioCheck.svg");
   background-repeat: no-repeat;
   width: 10px;
   height: 10px;
