@@ -1,0 +1,306 @@
+.filter {
+  /* transition: all .5s linear;
+  opacity: 0;
+  visibility: hidden;
+  display: flex; */
+  display: none;
+  justify-content: space-between;
+  gap: 46px;
+  position: absolute;
+  top: calc(100% + 14px);
+  right: 0;
+  z-index: 100;
+  background: $white;
+  border: 1px solid $black;
+  width: 542px;
+  height: 548px;
+  padding: 40px 46px;
+  box-shadow: 0px 4px 67px -12px $shadowColor;
+
+  &__form_right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__fieldset {
+    border: none;
+    margin-bottom: 32px;
+    width: 190px;
+    
+    &_price {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &_time {
+      @extend .filter__fieldset_price;
+      margin-bottom: 32px;
+      align-items: start;
+    }
+
+    &_color {
+      @extend .filter__fieldset_price;
+
+      margin-bottom: 32px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+
+    &_type {
+      @extend .filter__fieldset_price;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__legend {
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  &__label {
+    padding-left: 26px;
+    font-size: 14px;
+
+    &_range {
+      padding: 0;
+      font-size: $fontSizeT3;
+      margin-bottom: 3px;
+    }
+
+    &_color {
+      padding: 0;
+    }
+
+    &_type {
+      padding: 0;
+      display: flex;
+      gap: 14px;
+    }
+  }
+
+  &__range {
+    font-family: sans-serif;
+    font-size: 14px;
+    position: relative;
+    height: 20px;
+    width: 210px;
+    display: inline-block;
+    margin-top: -5px; 
+  }
+
+  &__input_range {
+    width: 190px;
+    height: 10px;
+    overflow: hidden;
+    outline: none;
+    position: absolute;
+
+    &,
+    &::-webkit-slider-thumb,
+    &::-webkit-slider-runnable-track {
+      -webkit-appearance: none;
+      background: none;
+    }
+
+    &::-webkit-slider-runnable-track {
+      width: 200px;
+      height: 1px;
+      background: $black;
+    }
+
+    &:nth-child(2)::-webkit-slider-runnable-track {
+      background: none;
+    }
+    
+    &::-webkit-slider-thumb {
+      position: relative;
+      height: 8px;
+      width: 8px;
+      margin-top: -4px;
+      background: $black;
+      border: 1px solid $black;
+      border-radius: 25px;
+      cursor: pointer;
+      z-index: 1;
+
+      :active {
+        cursor: grabbing;
+      }
+    }
+  }
+
+  &__input_radio {
+    appearance: none;
+    position: relative;
+
+    &::before {
+      margin-right: 14px;
+      content: '';
+      position: absolute;
+      left: -29px;
+      top: -5px;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      border: 1px solid $grayDark;
+      border-radius: 50%;
+      background: $white;
+    }
+
+    &:checked::after {
+      content: '';
+      position: absolute;
+      left: -25px;
+      top: -9px;
+      background-image: url('../../img/radioCheck.svg');
+      background-repeat: no-repeat;
+      width: 10px;
+      height: 10px; 
+    }
+
+    &:checked::before {
+      border: 1px solid $black;
+    }
+  }
+
+  &__input_color {
+    appearance: none;
+    position: relative;
+    width: 15px;
+    height: 15px;
+
+    &:checked {
+      border: 1px solid $black;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 2px;
+        top: 3px;
+        background-image: url('../../img/radioCheck.svg');
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 10px; 
+      }
+    }
+
+    &_white {
+      border: 1px solid $grayDark;
+      background: $white;
+    }
+    
+    &_black {
+      background: $black;
+
+      &:checked {
+        border: 1px solid $red;
+
+        &::after{
+          background-image: url('../../img/radioCheckWhite.svg');
+        }
+      }
+    }
+    
+    &_brown {
+      background: $brown;
+
+      &:checked::after {
+        background-image: url('../../img/radioCheckWhite.svg');
+      }
+    }
+
+    &_red {
+      background: $red;
+    }
+
+    &_orange {
+      background: $orange;
+    }
+
+    &_yellow {
+      background: $yellow;
+    }
+
+    &_green {
+      background: $green;
+    }
+
+    &_grass {
+      background: $grass;
+    }
+
+    &_blue {
+      background: $blue;
+    }
+
+    &_blue_dark {
+      background: $blueDark;
+
+      &:checked::after {
+        background-image: url('../../img/radioCheckWhite.svg');
+      }
+    }
+
+    &_lile {
+      background: $lile;
+
+      &:checked::after {
+        background-image: url('../../img/radioCheckWhite.svg');
+      }
+    }
+
+    &_violet {
+      background: $violet;
+
+      &:checked::after {
+        background-image: url('../../img/radioCheckWhite.svg');
+      }
+    }
+
+    &_lilac {
+      background: $lilac;
+    }
+
+    &_pink {
+      background: $pink;
+    }
+  }
+
+  &__input_type {
+    appearance: none;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $grayDark;
+
+    &:checked {
+      border: 1px solid $black;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 2px;
+        top: 3px;
+        background-image: url('../../img/radioCheck.svg');
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 10px; 
+      }
+    }
+  }
+
+  &__btn {
+    font-size: $fontSizeT2;
+    margin-top: auto;
+    width: 190px;
+    height: 40px;
+    background: none;
+    border-radius: 20px;
+    border: 1px solid $black;
+  }
+}

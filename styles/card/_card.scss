@@ -1,0 +1,97 @@
+.card {
+  width: $cardW;
+  padding-bottom: 8px;
+
+  &_cart {
+    display: flex;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: $fontSizeCardTitle;
+    line-height: 29px;
+    color: $black;
+    margin-bottom: 8px;
+
+    &_cart {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__btn {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    color: $black;
+  }
+
+  &__description {
+    font-size: $fontSizeT3;
+    line-height: 17px;
+    color: $grayDark;
+    margin-bottom: 15px;
+    font-weight: 300;
+
+    &_cart {
+      width: 275px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 8px;
+
+    &_cart {
+      width: 173px;
+      height: 173px;
+      object-fit: cover;
+      margin-right: 31px;
+    }
+  }
+
+  &__input {
+    width: 71px;
+    height: 51px;
+    background: $grayLight;
+    border-radius: 6px;
+    border: none;
+    margin-left: auto;
+    padding-left: 20px;
+    font-family: 'Poppins';
+    font-weight: 600;
+  }
+
+  &__link {
+    color: $black;
+    text-decoration: underline;
+    font-size: $fontSizeT3;
+    margin-right: 30px;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: $fontSizeCardTitle;
+    line-height: 29px;
+    color: $black;
+
+    &_big {
+      text-decoration-line: line-through;
+      color: $grayDark;
+    }
+
+    &_cart {
+      font-size: $fontSizeT2;
+    }
+  }
+
+  &__prices {
+    display: flex;
+    gap: 32px;
+
+    &_cart {
+      margin-bottom: 15px;
+    }
+  }
+}

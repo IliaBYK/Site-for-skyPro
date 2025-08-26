@@ -1,0 +1,43 @@
+/*variables*/
+@import 'variables';
+
+/*filter*/
+@import './filter/filter';
+
+/*visible for filter*/
+@import './visible/visible';
+
+/*center*/
+@import './center/center';
+
+/*main*/
+@import './main/main';
+
+/*link*/
+@import './link/link';
+
+/*btn*/ 
+@import './btn/btn';
+
+/*logo*/
+/*пришлось добавить класс, по макету логотип позиционируется по нижней границе шапки, 
+никак не хотел по другому на место ставать)*/
+@import './logo/logo';
+
+/*header*/
+@import './header/header';
+
+/*for*/
+@import './for/for';
+
+/*specials*/
+@import './specials/specials';
+
+/*card*/
+@import './card/card';
+
+/*footer*/
+@import './footer/footer';
+
+/*container*/
+@import './container/container';

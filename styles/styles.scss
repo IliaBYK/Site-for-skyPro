@@ -1,0 +1,18 @@
+/*все стили и переменные*/
+@import './index';
+
+/*catalog*/
+@import './catalog';
+
+/*cart*/
+@import './cart';
+
+/*mobile*/
+@import './mobile/mobile';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}

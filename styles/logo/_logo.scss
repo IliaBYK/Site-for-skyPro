@@ -1,0 +1,16 @@
+.logo {
+  &_display_flex {
+    height: 44px;
+    width: 198px;
+    display: flex;
+    align-items: end;
+  }
+
+  &_placed_footer {
+    margin-top: 12px;
+
+    &_index {
+      margin-top: 10px;
+    }
+  }
+}

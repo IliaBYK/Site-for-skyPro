@@ -1,0 +1,115 @@
+.header {
+  height: 735px;
+  width: 100%;
+  padding-top: 16px;
+  margin-bottom: $marginBotBlocks;
+  background: url('../img/backHeader.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &_catalog {
+    height: auto;
+    background: url("../img/headerCatalog.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 57px;
+  }  
+
+  &_cart {
+    @extend .header_catalog;
+    background: url('../img/cartBack.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 64px;
+  }
+
+  &__head {
+    border-bottom: .5px solid $white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 18px 0;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: $fontSizeH1;
+    line-height: 70px;
+    margin: 64px 0 16px 0;
+    color: $white;
+    max-width: 765px;
+
+    &_catalog {
+      @extend .header__title;
+      margin: 0;
+    }    
+
+    &_cart {
+      @extend .header__title_catalog
+    }
+  }
+
+  &__nav {
+    &_mobile {
+      display: none;
+    }
+  }
+
+  &__descript_catalog {
+    display: flex;
+    height: 322px;
+    align-items: center;
+  }
+
+  &__input {
+    width: 288px;
+    height: 41px;
+    border-radius: 20px;
+    background: none;
+    border: 1px solid $white;
+    padding-left: 32px;
+    display: block;
+    color: $white;
+    font-weight: 300;
+
+    &::placeholder {
+      color: $white;
+      font-size: $fontSizeT2;
+    }
+  }
+
+  &__link {
+    font-size: $fontSizeT2;
+    line-height: 24px;
+
+    &_search {
+      display: block;
+      width: 25px;
+      height: 25px;
+    }
+
+    &_catalog {
+      @extend .header__link_search;
+    }
+
+    &_cart {
+      @extend .header__link_search;
+    }
+  }  
+
+  &__list {
+    list-style: none;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    font-size: $fontSizeCardTitle;
+    line-height: 32px;
+    margin: 0 0 16px 0;
+    color: $white;
+  }
+}
+
+

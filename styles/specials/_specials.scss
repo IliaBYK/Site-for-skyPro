@@ -1,0 +1,26 @@
+.specials {
+  margin-bottom: $marginBotBlocks;
+
+  &__title {
+    font-weight: 600;
+    font-size: $fontSizeH2;
+    line-height: 59px;
+    color: $black;
+    margin: 0 0 32px 0;
+
+    &_cart {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 31px;
+
+    &_cart {
+      margin-bottom: 32px;
+    }
+  }
+}

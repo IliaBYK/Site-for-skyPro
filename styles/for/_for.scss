@@ -1,0 +1,55 @@
+.for {
+  margin-bottom: $marginBotBlocks;
+
+  &__content {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__title {
+    font-size: $fontSizeH2;
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    height: 415px;
+    grid-column: span 4;
+    font-weight: 500;
+    font-size: $fontSizeForTitle;
+    line-height: 41;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_big {
+      grid-column: span 6;
+    }
+
+    &_1 {
+      background: url('../img/for1.jpg') no-repeat;
+    }
+
+    &_2 {
+      background: url('../img/for2.jpg') no-repeat;
+    }
+
+    &_3 {
+      background: url('../img/for3.jpg') no-repeat;
+    }
+
+    &_4 {
+      background: url('../img/for4.jpg') no-repeat;
+    }
+
+    &_5 {
+      background: url('../img/for5.jpg') no-repeat;
+    }
+  }
+
+  &__add-item {
+    margin-bottom: 40px;
+  }
+}

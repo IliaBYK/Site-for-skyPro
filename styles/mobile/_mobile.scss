@@ -1,0 +1,416 @@
+@media (max-width: 1248px) {
+  .catalog {
+    max-width: 790px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cart {
+    &__content {
+      flex-direction: column;
+      gap: 64px;
+      max-width: 790px;
+      margin: 0 auto;
+    }
+
+    &__cards {
+      margin-bottom: 42px;
+    }
+
+    &__titles {
+      width: 800px;
+    }
+  }
+
+  .footer {
+    &__nav {
+      margin: 0;
+    }
+  }
+
+  .logo_placed_footer {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 16px 24px 0;
+  }
+
+  .main {
+    padding: 0 24px;
+  }
+
+  .for {
+    &__content {
+      gap: 30px;
+    }
+
+    &__item {
+      height: 265px;
+      background-size: cover;
+
+      &_big {
+        height: 268px;
+      }
+    }
+
+    &__add-item {
+      margin: 0;
+    }
+  }
+
+  .specials {
+    margin-bottom: 57px;
+
+    &__cards {
+      column-gap: 28px;
+      row-gap: 33px;
+
+      &_cart {
+        margin-bottom: 28px;
+      }
+    }
+  }
+
+  .catalog {
+    &__cards {
+      column-gap: 28px;
+      row-gap: 30px;
+    }
+  }
+
+  .footer {
+    padding: 38px 0 58px;
+  }
+}
+
+@media (max-width: 833px) {
+  .header {
+    padding: 48px 16px 0;
+    margin-bottom: 32px;
+
+    &_catalog {
+      margin-bottom: 38px;
+    }
+
+    &_cart {
+      margin-bottom: 90px;
+    }
+
+    &__logo {
+      width: 100%;
+    }
+
+    &__input {
+      display: none;
+    }
+
+    &__head {
+      border: none;
+    }
+
+    &__nav {
+      display: none;
+
+      &_mobile {
+        display: flex;
+        width: 128px;
+      }
+    }
+
+    &__link {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+
+      &_to_catalog {
+        display: block;
+        width: auto;
+        height: 24px;
+        font-size: $fontSizeT3;
+      }
+    }
+
+    &__descript {
+      text-align: center;
+
+      &_catalog {
+        height: 230px;
+        display: block;
+      }
+    }
+
+    &__title {
+      font-size: $fontSizeH2;
+      line-height: 59px;
+      text-align: center;
+      margin-top: 27px;
+
+      &_catalog {
+        margin-top: 80px;
+      }
+    }
+
+    &__text {
+      font-size: $fontSizeT2;
+    }
+  }
+
+  .logo {
+    &_placed_header {
+      width: 99px;
+      height: 22px;
+    }
+  }
+
+  .main {
+    padding: 0 16px;
+  }
+
+  .for {
+    margin-bottom: 31px;
+
+    &__title {
+      font-size: $fontSizeCardTitle;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__item {
+      font-size: $fontSizeForTitleSmall;
+      height: 375px;
+
+      &_big {
+        height: 244px;
+      }
+    }
+  }
+
+  .specials {
+    margin-bottom: 26px;
+
+    &_cart {
+      margin-bottom: 34px;
+    }
+
+    &__title {
+      font-size: $fontSizeCardTitle;
+      line-height: 29.5px;
+    }
+
+    &__cards {
+      gap: 22px;
+      justify-content: center;
+
+      &_cart {
+        gap: 25px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .card {
+    width: 100%;
+
+    &__title {
+      font-size: $fontSizeT1;
+
+      &_cart {
+        margin-bottom: 4px;
+      }
+    }
+
+    &__img {
+      height: 250px;
+      object-fit: cover
+      ;
+      margin-bottom: 2px;
+
+      &_cart {
+        display: none;
+      }
+    }
+
+    &__description {
+      margin-bottom: 3px;
+
+      &_cart {
+        font-size: $fontSizeT4;
+        line-height: 15px;
+        width: 216px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &__prices {
+      &_cart {
+        margin-bottom: 20px;
+      }
+
+      &_placed_cart {
+        gap: 54px;
+      }
+    }
+
+    &__price {
+      font-size: $fontSizeT1;
+
+      &_cart {
+        font-size: $fontSizeT4;
+        line-height: 15px;
+      }
+    }
+  }
+
+  .catalog {
+    margin-bottom: 35px;
+
+    &__title {
+      font-size: $fontSizeCardTitle;
+      line-height: 29.5px;
+
+      &_catalog {
+        margin-bottom: 22px;
+        font-size: $fontSizeT3;
+      }
+    }
+
+    &__cards {
+      /*не совсем точно по макету вышло, что странно, 
+      так как первая и последняя карточка совпадают, 
+      а в середине что-то не очень*/
+      gap: 28px;
+      margin-bottom: 27px;
+    }
+
+    &__menu {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    &__btns {
+      flex-direction: column-reverse;
+      width: 203px;
+      gap: 8px;
+    }
+
+    &__select {
+      font-size: $fontSizeT3;
+      background-position: calc(100% - 23px);
+      padding: 11px 53px 13px 19px;
+    }
+  }
+
+  .footer {
+    padding: 33px 16px 33px;
+
+    &__nav {
+      gap: 103px;
+      margin-bottom: 69px;
+    }
+
+    &__form-container {
+      margin-left: -16px;
+    }
+  }
+
+  .filter {
+    right: -82px;
+    width: 286px;
+    height: 910px;
+    flex-direction: column;
+    gap: 0;
+    border: none;
+    padding: 40px 48px;
+
+    &__fieldset_color:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  .cart {
+    margin-bottom: 48px;
+
+    &__cards {
+      margin-bottom: 14px;
+    }
+
+    &__card {
+      padding-top: 15px;
+      margin: 0;
+      height: 192px;
+      width: auto;
+      max-width: 786px;
+
+      &:last-child {
+        padding-top: 15px;
+      }
+
+      &:last-child .card__description_cart {
+        font-size: $fontSizeT3;
+        width: 229px;
+        line-height: 17px;
+        margin-bottom: 17px;
+      }
+
+      &:last-child .card__prices_cart {
+        margin-bottom: 18px;
+      }
+
+      &:last-child .card__price_cart {
+        font-size: $fontSizeT3;
+      }
+    }
+
+    &__titles {
+      display: none;
+    }
+
+    &__btns {
+      display: flex;
+      gap: 14px;
+    }
+
+    &__btn {
+      width: 164px;
+      height: 37px;
+      font-size: $fontSizeT4;
+    }
+
+    &__form-container {
+      padding: 30px 28px;
+      height: 540px;
+    }
+
+    &__form-title {
+      margin-left: 0;
+    }
+
+    &__form-cost {
+      margin-left: 3px;
+    }
+
+    &__form-btn {
+      margin-left: 0;
+    }
+
+    &__link {
+      font-size: $fontSizeT2;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .footer {
+    &__form-container {
+      align-self: center;
+    }
+  }
+}
