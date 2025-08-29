@@ -689,9 +689,6 @@
     max-width: 790px;
     margin: 0 auto;
   }
-  .container_footer {
-    padding: 38px 0 58px;
-  }
 }
 @media (max-width: 650px) {
   .container_footer {
@@ -701,7 +698,6 @@
 .container_footer {
   display: flex;
   justify-content: space-between;
-  padding: 34px 0 59px;
 }
 
 /*catalog*/
@@ -1027,7 +1023,7 @@
     margin-bottom: 4px;
   }
   .card__img {
-    height: 250px;
+    height: 226px;
     -o-object-fit: cover;
        object-fit: cover;
     margin-bottom: 2px;
