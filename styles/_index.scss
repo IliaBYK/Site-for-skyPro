@@ -7,9 +7,6 @@
 /*visible for filter*/
 @import './visible/visible';
 
-/*center*/
-@import './center/center';
-
 /*main*/
 @import './main/main';
 
@@ -41,3 +38,6 @@
 
 /*container*/
 @import './container/container';
+
+/*center*/
+@import './center/center';

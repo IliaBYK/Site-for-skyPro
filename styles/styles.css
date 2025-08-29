@@ -271,12 +271,6 @@
   display: flex;
 }
 
-/*center*/
-.center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
-}
-
 /*main*/
 .main {
   position: relative;
@@ -571,6 +565,7 @@
 /*footer*/
 .footer {
   background: rgb(247, 246, 246);
+  padding: 34px 0 59px;
 }
 .footer__title {
   font-weight: 500;
@@ -698,6 +693,12 @@
 .container_footer {
   display: flex;
   justify-content: space-between;
+}
+
+/*center*/
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 /*catalog*/
@@ -864,6 +865,9 @@
   }
   .cart__titles {
     width: 800px;
+  }
+  .footer {
+    padding: 38px 0 58px;
   }
   .footer__nav {
     margin: 0;
